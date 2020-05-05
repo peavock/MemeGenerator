@@ -1,0 +1,59 @@
+body{
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    background-color: #c8cfd6;
+}
+h1{
+    font-family: 'Archivo Black', sans-serif;
+    color: black;
+}
+h2{
+    font-style: italic;
+    font-size: 18px;
+}
+.reverse{
+    color: rgb(3,255,192);
+    background-color: black;
+}
+.top{
+    background-color: rgb(3,255,192);
+    border: 10px solid black;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.meme{
+    float: left;
+    position: relative;
+    display: inline-block;
+    
+    border: 5px solid rgb(3,255,192);
+    width: 45%;
+    margin: 5px;
+}
+.meme img{
+    width: 100%;
+}
+.textFirst{
+    position: absolute;
+    font-size: large;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+.textSecond{
+    position: absolute;
+    font-size: medium;
+    bottom: 20px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Lobster', cursive;
+
+}

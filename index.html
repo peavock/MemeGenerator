@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meme Generator!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top">
+        <h1>MEME <span class="reverse">GENERATOR</span></h1>
+        <h2>The easy way to come up with a dank meme!</h2>
+    </div>
+    <form action="" id = "logoform">
+        <p>
+            <hr>
+            <label for=""> Pick a picture from our gallery:
+                <input type="text" placeholder = "A, B, C, or D" name = "pictureChoice">
+            </label>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>D</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://media.nationalgeographic.org/assets/photos/000/287/28780.jpg" alt = "Whales" style ="width:150px">
+                        </td>
+                        <td>
+                            <img src="https://static.boredpanda.com/blog/wp-content/uploads/2020/03/funny-animals-photoshopped-cats-koty-vezde-fb50-png__700.jpg" alt = "Sheep" style ="width:150px">
+                        </td>
+                        <td>
+                            <img src="https://i.insider.com/5c8045a6d2ce7802a110ce92?width=1100&format=jpeg&auto=webp" alt = "Seal" style ="width:150px">
+                        </td>
+                        <td>
+                            <img src="https://i.insider.com/5c79a923eb3ce823662bec14?width=750&format=jpeg&auto=webp" alt = "Rhino" style ="width:150px"> 
+                        </td>
+                    </tr>
+                </table>
+        </p>
+        <p>
+            <label for=""> OR give us a url link to a custom photo:
+                <input type="text" placeholder = "www.picturelink.com" name = "pictureLink">
+            </label>
+        </p>
+        <p>
+            <label for=""> Enter a first phrase:
+                <input type="text" placeholder = "Whale hello there!" name = "phraseFirst">
+            </label>
+        </p>
+        <p>
+            <label for=""> Enter a second phrase if desired:
+                <input type="text" placeholder = "Krill out already!" name = "phraseSecond">
+            </label>
+        </p>
+        <p>
+            <label for=""> Pick a font color:
+                <input type="color" name = "fontColorChoice">
+            </label>
+            <label for=""> Pick a font background color
+                <input type="color" name = "fontBackgroundColorChoice">
+            </label>
+            <label for=""> Select a font size:
+                <input type="range" min = "10" max = "36" name = "fontSize">
+            </label>
+        </p>
+        <input type = "Submit" id ="submit">
+        <hr>
+    </form>
+    <h2 class="top">HERE ARE YOUR MEMES! <br> double click to remove ones you don't like<h2>
+    <div id="memeGallery">
+        <div class="meme">
+            <img src="https://media.nationalgeographic.org/assets/photos/000/287/28780.jpg" alt = "Whales">
+            <p class="textFirst">Whale Hello There!</p>
+            <p class="textSecond">Krill out already!</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
